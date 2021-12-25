@@ -1,0 +1,41 @@
+<!DOCTYPE html>  <!-- HTML5라는 유형을 알려주는것-->
+    <html lang="ko">
+        <head>
+            <meta charest="UTF-8">   <!--유니코드를 맞춰줘야 한글이 잘 보인다-->
+            <style>
+                .red{color:#ff0000;}
+                .blue{color : #0000ff;}
+                .bold{font-weight: bold;}
+            </style>
+        </head>
+        <body>
+            <div>
+                <h1>Cities</h1>
+                <ul>
+                    <li id="one" class="red blod">Seoul</li>
+                    <li id="two" class="blue">London</li>
+                    <li id="three" class="red">newyour</li>
+                    <li id="four" >tokyo</li>
+                </ul>
+            </div>
+            <!--<script>
+                const el=document.querySelector('ul');
+
+                for(let i=0;i<el.childNodes.length;i++)
+                {
+                    if(el.childNodes[i].nodeType == Node.TEXT_NODE)
+                    {
+                        console.log(el.childNodes[i].nodeValue);
+                        el.childNodes[i].nodeValue = 'node'+i;
+                    }
+                }
+            </script>
+            -->
+            <script>
+                const el=document.querySelector('div');
+                const ul=document.querySelector('ul');
+                const result=el.removeChild(ul);
+                console.log(result);
+            </script>
+        </body>
+    </html>

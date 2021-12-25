@@ -1,0 +1,71 @@
+<!DOCTYPE html>  <!-- HTML5라는 유형을 알려주는것-->
+    <html lang="ko">
+        <head>
+            <meta charest="UTF-8">   <!--유니코드를 맞춰줘야 한글이 잘 보인다-->
+            <style>
+            </style>
+        </head>
+        <body>
+            <div>
+                <label for="height">키</label>
+                <input type="text" id="height" maxlength="3"><br>
+                <label for="weight">몸무게</label>
+                <input type="text" id="weight" maxlength="3">
+            </div>
+            <button type="button" onclick="calcPhysicalLevel()">신체등급 계산</button>
+            <div id="result"></div>
+            <script>
+                var height =document.getElementById('height');
+                var weight= document.getElementById('weight');
+                var message=document.getElementById('result');
+                function calcPhysicalLevel()
+                {
+                    height=new Number(height.value);
+                    weight=new Number(weight.value);
+                    var count=0;
+                    count=height/weight;
+                    if(height<=140){
+                        message.innerText="6급";
+                    }
+                    else if(height<146)
+                    {
+                        message.innerText="5급"
+                    }
+                    else if(height<159)
+                    {
+                        message.innerText="4급"
+                    }
+                    else if(height<161)
+                    {
+                        if(count>15.9 && count<35)
+                        {
+                            message.innerText="4급";
+                        }
+                        message.innerText="3급"
+                    }
+                    else if(height<204)
+                    {
+                        if(count<24.9)
+                        {
+                            message.innerText="1급"
+                        }
+                        else if(count<29.9)
+                        {
+                            message.innerText="2급"
+                        }
+                        else if(count<34.9)
+                        {
+                            message.innerText="3급"
+                        }
+                        else{
+                            message.innerText="4급"
+                        }
+                    }
+                    else{
+                        message.innerText="4급"
+                    }
+                    
+                }
+            </script>
+        </body>
+    </html>

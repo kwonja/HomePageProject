@@ -1,0 +1,16 @@
+<!DOCTYPE html>  <!-- HTML5라는 유형을 알려주는것-->
+    <html lang="ko">
+        <head>
+            <meta charest="UTF-8">   <!--유니코드를 맞춰줘야 한글이 잘 보인다-->
+            <script type="text/javascript">
+                function writeMessage(){
+                    var count=0;
+                    document.getElementById("message").innerText = (++count+"번 누르셨습니다!");
+                }
+            </script>
+        </head>
+        <body>
+            <p id="message"></p>
+            <input type="button" value="Click me" onclick="writeMessage();">
+        </body>
+    </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>  <!-- HTML5라는 유형을 알려주는것-->
+    <html lang="ko">
+        <head>
+            <meta charest="UTF-8">   <!--유니코드를 맞춰줘야 한글이 잘 보인다-->
+            <style>
+            </style>
+        </head>
+        <body>
+            <script>
+
+var foo=function(num){
+                    return num*num;
+                };
+                console.log(foo(3));
+                //반환값이 없는 경우
+                (
+                    function(){
+                        console.log("hello world");
+                    }()
+                );
+                //반환값이 있는 경우
+                var result=( function(){
+                    return "hello world"
+                }()
+
+                );
+                console.log(result);
+
+                //////////////////////////// 화살표
+                var foo1=(num) =>{
+                    return num*num;
+                };
+                
+                var foo2 = (num) => {return num*num};
+
+                var foo3 = (num) => num*num;
+
+                var foo4 =() => console.log("hello");
+
+                console.log(foo1(2));
+                console.log(foo2(3));
+                console.log(foo3(4));
+                foo4();
+
+                ///////////////////////////////
+                var a=10;
+                if(true)
+                {
+                    var b=20;
+                }
+
+                function func(){
+                    var c=30;
+                    d=40;
+                    return c;
+                };
+
+                document.write(a);
+                document.write(b);
+                document.write(func());
+                document.write(d);
+                //////////////////////////////
+            </script>
+
+            <button id="btn">click moe</button>
+            <div id="box"></div>
+            <script>
+                var el=document.getElementById("box");
+                var btn=document.getElementById("btn");
+                var cnt=0;
+                var toggle=(function()
+                {
+                    return function(){
+                        el.innerText=++cnt;
+                    };
+                }() );
+
+                btn.onclick=toggle;
+                ////////////////////////////////////////////
+            </script>
+            <script>
+                var emptyobj={};
+                console.log(typeof emptyobj);
+
+                var person={
+                    name: "Kim",
+                    sayHello:function(){
+                        console.log("hello, my name is"+this.name);
+                    }
+                };
+                console.log(typeof person)
+                console.log(person);
+            </script>
+        </body>
+    </html>
