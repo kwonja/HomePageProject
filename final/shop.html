@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" media="screen and (max-width:800px)" type="text/css" href="./css/mobile_style.css">
+        <title></title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="index.html"><div class="logo">제주맥주</div></a>
+                <div class="user_info">
+                    <a href="login.html">LOGIN </a>
+                    <a href="join_agree.html">JOIN</a>
+                </div>
+            </header>
+            <nav class="clear">
+                <div>
+                    <script src="./js/script.js"></script>
+                    <script>
+                        addMenu();
+                    </script>
+                </div>
+            </nav>
+        <aside>
+            <div>
+                <a href="#"><img src="./img/share.png" alt="화살표" width="50"></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/up.png"alt="화살표" width="50"></a>
+            </div>
+        </aside>
+        <main>
+            <article>
+
+                <script>
+                    var url=[
+                          'shop_detail1.html','#','#'
+                    ]
+                    for(var i=1;i<4;i++)
+                    {
+                        document.write('<div class="shop-box">'); 
+                        document.write('<a href="'+url[i-1]+'"><img src="./img/shop'+i+'.jpg" width="100%"></a>');
+                        document.write('<div class="shop_inner_text">');
+                        document.write('<p class="white-font">'+'CRISPY LAVAR SNACK'+'</p>');
+                        document.write('<p class="white-font">'+'제주에서 만난 찹쌀 김부각(4ea)'+'</p>');
+                        document.write('<p class="white-font">'+'&#8361; 12,100원'+'</p>');
+                        document.write('</div>');
+                        document.write('</div>');
+                    }
+                    document.write('<div class="coming_soon">');
+                    document.write('<h2 class="more_font">'+'More Coming Soon!'+'</h2>');
+                    document.write('</div>');
+                </script>
+                <!--  
+            <div class="shop-box">
+                    <a href="shop_detail1.html"><img src="./img/shop1.jpg" width="100%"></a>
+                <div class="shop_inner_text">
+                <p class="white-font">CRISPY LAVAR SNACK</p>
+                <p class="white-font">제주에서 만난 찹쌀 김부각(4ea)</p>
+                <p class="white-font">&#8361; 12,100원</p>
+            </div>
+            </div>
+                <div class="shop-box">
+                    <a href="#"><img src="./img/shop2.jpg" width="100%"></a>
+                    <div class="shop_inner_text">
+                        <p class="white-font">JEJU BEER PALYING CARD</p>
+                        <p class="white-font">제주맥주 조약돌 화투</p>
+                        <p class="white-font">&#8361; 8,800원</p>
+                    </div>
+                    </div>
+            
+                <div class="shop-box">
+                    <a href="#"><img src="./img/shop3.jpg" width="100%"></a>
+                    <div class="shop_inner_text">
+                        <p class="white-font">JOUR ALE GLASS</p>
+                        <p class="white-font">아워 에일 전용잔 473mL</p>
+                        <p class="white-font">&#8361; 8,800원</p>
+                    </div>
+                    </div>
+                    <div class="coming_soon">
+                        <h2 class="more_font">More coming soon!</h2>
+                    </div>
+                -->
+            </article>
+        </main>
+        <footer>
+            <div>
+                <script src="./js/script.js"></script>
+                <script>
+                    Mfooter();
+                </script>
+            </div>
+        </footer>
+    </div>
+    </body> 
+</html>
