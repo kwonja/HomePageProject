@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('SF_HambakSnow.woff2') format('woff2'),
+        url('SF_HambakSnow.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

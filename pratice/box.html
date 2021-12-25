@@ -1,0 +1,64 @@
+<!DOCTYPE html>  <!-- HTML5라는 유형을 알려주는것-->
+    <html lang="ko">
+        <head>
+            <meta charest="UTF-8">   <!--유니코드를 맞춰줘야 한글이 잘 보인다-->
+            <style>
+
+                div{
+                    border: 1px solid red;
+                }
+                #container{
+                    width: 1000px;
+                    height: 600px;
+                    position: relative;
+                }
+
+                #box1, #box2, #box3{
+                    box-sizing: border-box;
+                    padding:15px;
+                    text-align: center;
+                   
+                }
+                #box1{
+                    top:60px;
+                    left:25px;
+                    width: 250px;
+                    position: absolute;
+                }
+                #box2{
+                    bottom: 50%;
+                    left:5%;
+                    width: 200px;
+                    position: fixed;
+                }
+                #box3{
+                    bottom:200px;
+                    right:50px;
+                    width: 400px;
+                    position: absolute;
+                }
+                
+            </style>
+
+        </head>
+        <body>
+            <div id="container">
+
+             <div id="box1">
+                box1<br>
+                가나다
+             </div>
+             <br>
+             <div id="box2">
+                box2<br>
+                마바사
+             </div>
+             <br>
+             <div id="box3">
+                box13<br>
+                아자차
+             </div>
+
+        </div>
+        </body>
+    </html>

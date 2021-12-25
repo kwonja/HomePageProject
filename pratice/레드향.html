@@ -1,0 +1,49 @@
+<!DOCTYPE html>  <!-- HTML5라는 유형을 알려주는것-->
+    <html lang="ko">
+        <head>
+            <meta charest="UTF-8">   <!--유니코드를 맞춰줘야 한글이 잘 보인다-->
+            <title> 스타일 시트</title>
+             <!--값에 공백이 들어가기 때문에 맑은 고딕을 문자열로 만들어줌 -->
+            <style>
+                @font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+                .emphasis{
+                    font-weight: 900;
+                    font-size: 200%;
+                    color:rgb(46, 128, 148)
+                }
+                body {
+                    font-family: "IM_Hyemin-Bold";
+                    font-size: 20px ;
+                    color: blue;
+                }
+                blockquote{
+                    font-style: italic;
+                    font-size: 80%;
+                    color: blueviolet;
+                }
+            </style>
+        </head>
+        <body>
+            <div id="container">
+            <h1 style="color : green;">레드향</h1>
+            <p style="color: red;">껍질에 붉은 빛이 돌아 <strong>레드향</strong> 이라 불린다.</p>
+            <p>껍질에 붉은 빛이 돌아 레드향 이라 불린다.<br>일반귤</p>
+            <p>레드향은 <em>한라봉과 귤을 교배</em>한것으로</p>
+            <blockquote>
+                비타민 C와 비타민 p가 풍부해<br>
+                <strong class= "emphasis">혈액 순환</strong>
+                    
+            </blockquote>
+        </div>
+    </body>
+    </html>
+
+
+    <!--내부스타일 방법 head 안에 style을 추가 *은 전제-->
+    <!--전체 선택자, 타입선택자-->
+
