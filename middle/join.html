@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" media="screen and (max-width:800px)" type="text/css" href="./css/mobile_style.css">
+        <title></title>
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <a href="index.html"><div class="logo">제주맥주</div></a>
+            <div class="user_info">
+                <a href="login.html">LOGIN </a>
+                <a href="join_agree.html">JOIN</a>
+            </div>
+        </header>
+        <nav class="clear">
+            <div>
+                <script src="./js/script.js"></script>
+                <script>
+                    addMenu();
+                </script>
+            </div>
+        </nav>
+        <aside>
+            <div>
+                <a href="#"><img src="./img/share.png" alt="화살표" width="50"></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/up.png"alt="화살표" width="50"></a>
+            </div>
+        </aside>
+        <main>
+            <div class="join">JOIN</div>
+            <div>안녕하세요 제주맥주입니다.</div>
+            <br>
+            <br>
+            <div class="frame1">
+            <form method="POST" enctype="multipart/form-data">
+                <div>
+                    <input id="photo" name="photo" type="file" value=""> 
+                </div>
+                <div>
+                    <input id="email" name="email" type="email" placeholder="이메일">
+                </div>
+                <div>
+                    <input id="pass1" name="pass1" type="password" placeholder="비밀번호"><br>
+                    <input id="pass2" type="password" placeholder="비밀번호 확인">
+                </div>
+                <div>
+                    <label for="name" class="after">이름 </label><br>
+                    <input id="name" name="name" type="text" placeholder="이름을 입력하세요.">
+                </div>
+                <div>
+                    <label class="after" >성별 </label><br>
+                    <input id="man" name="gender" type="radio" value="man">
+                    <label for="man" id="man">남자</label><br>
+                    <input id="women" name="gender" type="radio" value="women">
+                    <label for="women" id="women">여자</label><br>
+                </div>
+                <div>
+                    <label class="after" >연락처</label><br>
+                    <input id="phone" name="phone" type="tel" placeholder="연락처">
+                </div>
+                <div>
+                    <label class="after" >주소</label><br>
+                    <input id="address" name="address" type="text" placeholder="주소"><br>
+                    <input id="detail_address" name="detail_address" type="text" placeholder="상세주소"><br>
+                </div>
+                <div>
+                    <label class="after">생년월일</label><br>
+                    <select>
+                            <script>
+                                for(var i=2021; i>1997;i--)
+                                {document.write('<option value="i">'+i+'</option>');}
+                            </script>
+                    </select>
+                    <select>
+                        <script>
+                            for(var i=12; i>0;i--)
+                            {document.write('<option value="i">'+i+'</option>');}
+                        </script>
+
+                    </select>
+                    <select>
+                        <script>
+                            for(var i=31; i>0;i--)
+                            {document.write('<option value="i">'+i+'</option>');}
+                        </script>
+                    </select>
+                </div>
+                <div>
+                    <input id="agree_terms" name="agree_terms" type="hidden">
+                    <input id="user_info_agree" name="user_info_agree" type="hidden">
+                    <input id="marketing_sms_agree" name="marketing_sms_agree" type="hidden">
+                    <input id="marketing_email_agree" name="marketing_email_agree" type="hidden">
+                    <button class="join1-button" type="button" onclick="formValidator()">가입하기</button>
+                    <script>
+                        function formValidator()
+                        {
+                            let email=document.getElementById('email');
+                            const regExp=/^.*(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+                            let phone=document.getElementById('phone');
+                            const regExp1=/^[0-9]*$/;
+                            console.log(regExp1.value);
+
+
+                        if(!regExp.test(email.value)){
+                                alert("이메일는 영어와 숫자,특수문자를 조합해야합니다");
+                                    }
+                        else{
+                            if(!regExp1.test(phone.value))
+                            {
+                                alert("0~9숫자로 - 없이 작성해야합니다"); 
+                            }
+                            else{
+                              location.href="login.html";
+                            }
+                        }
+
+                        }
+                    </script>
+                </div>
+            </form>
+        </div>
+        </main>
+        <footer>
+            <div>
+                <script src="./js/script.js"></script>
+                <script>
+                    Mfooter();
+                </script>
+            </div>
+        </footer>
+    </div>
+    </body> 
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" media="screen and (max-width:800px)" type="text/css" href="./css/mobile_style.css">
+        <title></title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="index.html"><div class="logo">제주맥주</div></a>
+                <div class="user_info">
+                    <a href="login.html">LOGIN </a>
+                    <a href="join_agree.html">JOIN</a>
+                </div>
+            </header>
+            <nav class="clear">
+                <div>
+                    <script src="./js/script.js"></script>
+                    <script>
+                        addMenu();
+                    </script>
+                </div>
+            </nav>
+        <aside>
+            <div>
+                <a href="#"><img src="./img/share.png" alt="화살표" width="50"></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/up.png"alt="화살표" width="50"></a>
+            </div>
+        </aside>
+        <main>
+            <article class="slide">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </article>
+            
+            <article>
+                <div>
+                    <div class="join">NEWS</div>
+                    제주맥주의 소식을 알려드립니다.
+                </div>
+                <br>
+                <br>
+                <table class="news_table" border="1">
+                    <col style="width : 600px">
+                    <col style="width : 100px">
+                    <thead>
+                        <th>제목</th><th>작성시간</th>
+                    </thead>
+                    <tbody>
+                        <script>
+                            for(var i=0;i<10;i++)
+                            {
+                                document.write('<tr>');
+                                document.write('<td>');
+                                document.write('<a href="news_read.html">[공지]코로나 19 관련 나만의 캠핑카 운영안내</a>');
+                                document.write('</td>');
+                                document.write('<td>');
+                                document.write('2021-07-12');
+                                document.write('</td>');
+                                document.write('</tr>');
+                            }
+                            </script>
+                    </tbody>
+                </table>
+                <div>&lt; 1 2 3
+                &gt;</div>
+            </article>
+        </main>
+        <footer>
+            <div>
+                <script src="./js/script.js"></script>
+                <script>
+                    Mfooter();
+                </script>
+            </div>
+        </footer>
+        </div>
+    </body> 
+</html>
