@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head><meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <title></title>
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <a href="index.html"><div class="logo">제주맥주</div></a>
+            <div class="user_info">
+                <a href="login.html">LOGIN </a>
+                <a href="join_agree.html">JOIN</a>
+            </div>
+        </header>
+        <nav class="clear">
+            <ul>
+                <li><a href="index.html">INDEX</a>
+                <li><a href="shop.html">SHOP</a>
+                    <li><a href="about_us.html">ABOUT US</a>
+                    <li><a href="news.html">NEWS</a>
+                    <li><a href="contact.html">CONTACT</a>
+            </ul>
+        </nav>
+        <aside>
+            <div>
+                <a href="#"><img src="./img/share.png" alt="화살표" width="50"></a>
+            </div>
+            <div>
+                <a href="#"><img src="./img/up.png"alt="화살표" width="50"></a>
+            </div>
+        </aside>
+        <main>
+            <div class="join">JOIN</div>
+            <div>안녕하세요 제주맥주입니다.</div>
+            <br>
+            <br>
+            <div class="frame1">
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <div>
+                    <input id="photo" name="photo" type="file" value=""> 
+                </div>
+                <div>
+                    <input id="email" name="email" type="email" placeholder="이메일"  autofocus required>
+                </div>
+                <div>
+                    <input id="pass1" name="pass1" type="password" placeholder="비밀번호"><br>
+                    <input id="pass2" type="password" placeholder="비밀번호 확인">
+                </div>
+                <div>
+                    <label for="name" class="after">이름 </label><br>
+                    <input id="name" name="name" type="text" placeholder="이름을 입력하세요.">
+                </div>
+                <div>
+                    <label class="after" >성별 </label><br>
+                    <input id="man" name="gender" type="radio" value="man">
+                    <label for="man" id="man">남자</label><br>
+                    <input id="women" name="gender" type="radio" value="women">
+                    <label for="women" id="women">여자</label><br>
+                </div>
+                <div>
+                    <label class="after" >연락처</label><br>
+                    <input id="phone" name="phone" type="tel" placeholder="연락처">
+                </div>
+                <div>
+                    <label class="after" >주소</label><br>
+                    <input id="address" name="address" type="text" placeholder="주소"><br>
+                    <input id="detail_address" name="detail_address" type="text" placeholder="상세주소"><br>
+                </div>
+                <div>
+                    <label class="after">생년월일</label><br>
+                    <select>
+                        <option value="2020" selected> 2020</option>
+                        <option value="2019"> 2019</option>
+                        <option value="2018"> 2018</option>
+                    </select>
+                    <select>
+                        <option value="05" selected> 05</option>
+                        <option value="06"> 06</option>
+                        <option value="07"> 07</option>
+                    </select>
+                    <select>
+                        <option value="15" selected> 15</option>
+                        <option value="16"> 16</option>
+                        <option value="17"> 17</option>
+                    </select>
+                </div>
+                <div>
+                    <input id="agree_terms" name="agree_terms" type="hidden">
+                    <input id="user_info_agree" name="user_info_agree" type="hidden">
+                    <input id="marketing_sms_agree" name="marketing_sms_agree" type="hidden">
+                    <input id="marketing_email_agree" name="marketing_email_agree" type="hidden">
+                    <button class="join1-button" type="submit">가입하기</button>
+                </div>
+            </form>
+        </div>
+        </main>
+        <footer>
+            <div class="end">
+                제주맥주 주식회사 대표이사 권성민<br>
+                본사> 본사 주소<br>
+                호스팅 제공자 권성민 &nbsp;&nbsp;&nbsp; 사업자등록번호 xxx-xx-xxxx&nbsp;&nbsp;&nbsp;통신판매업신고번호 제 2020-제주한림-0101 호<br>
+                개인정보보호책임자 권성민&nbsp;&nbsp;&nbsp; 고객센터 xx-xxxx-xxxx, xxxx&commat;xxxx.co.kr
+            </div>
+        </footer>
+    </div>
+    </body> 
+</html>
